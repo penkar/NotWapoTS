@@ -1,0 +1,13 @@
+.news-link-li {
+  margin-right: 8px;
+
+  a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: #d5d5d5;
+  }
+
+  a:hover {
+    color: lighten(#d5d5d5, 20%);
+  }
+}

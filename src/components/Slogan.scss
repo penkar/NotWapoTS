@@ -1,0 +1,29 @@
+.slogan-sectional {
+  .slogan-text {
+    color: black;
+    text-decoration: none;
+    font-family: 'Jeacq';
+    font-size: 3rem;
+  }
+  .slogan-row-text {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .slogan-row-text-col {
+      width: 27%;
+      &.left {
+        font-weight: bold;
+        text-align: left;
+      }
+      &.center {
+        font-style: italic;
+        text-align: center;
+      }
+      &.right {
+        text-align: right;
+      }
+    }
+  }
+}

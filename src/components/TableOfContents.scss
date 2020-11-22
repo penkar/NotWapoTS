@@ -1,0 +1,136 @@
+.table-of-contents-component {
+  display: flex;
+  flex-direction: column;
+
+  z-index: 10000;
+  position: fixed;
+  top: 60px;
+  left: -325px;
+  width: 325px;
+  height: calc(100vh - 60px);
+  overflow: visible;
+
+  background-color: #2a2a2a;
+  padding: 12px 0px;
+
+  transition: left 1s, background-color 1s, transform 1s;
+
+  &.open {
+    left:0px;
+  }
+
+  >hr {
+    border: solid rgba(255, 255, 255, 0.22) 1px;
+  }
+
+  >hr.divider {
+    width: 259px;
+    margin-left: 53px;
+    left:0px;
+    color:gray;
+    border-top-width: 1px;
+    border-bottom-width: 0px;
+  }
+
+  >.content-component-button {
+
+  }
+
+  .content-component {
+    padding: 6px 0px;
+    width: 238px;
+    margin-left: 42.5px;
+    color: white;
+    transition: padding 1s, background-color 2s, transform 2s;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 1rem;
+
+    >.label, .right-arrow {
+      font-size: 14px;
+    }
+
+    >.subcontents-component {
+      display: none;
+      flex-direction: column;
+
+      >.subcontent-component {
+        color:white;
+      }
+    }
+
+    &:hover {
+      background-color: black;
+      padding-left: 24px;
+
+      >.subcontents-component {
+        width: 250px;
+        display: flex;
+        position:fixed;
+        left: 300px;
+        background-color: white;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        z-index: 10000;
+        background-color: white;
+        padding: 8px 16px;
+
+        >.arrow {
+
+        }
+
+        >.subcontent-component {
+          border-radius: 4px;
+          padding: 4px;
+          background-color: white;
+
+          &:hover {
+            background-color: #efefef;
+          }
+
+          >a {
+            color:#545454;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .multicontent-component {
+    >a {
+      text-decoration: none;
+      color: white;
+      margin-left: 4px;
+      transition: margin-left 1s;
+    }
+
+    &:hover {
+      >a {
+        margin-left: 10px;
+      }
+    }
+
+    >a:first-child {
+      margin-left:0px;
+      &:hover {
+        margin-left: 0px;
+      }
+    }
+
+    .primary {
+      font-size: 16px;
+    }
+
+    .secondary {
+      font-size: 10px;
+    }
+  }
+
+  hr.full-break {
+    width: 100%;
+    border-bottom: 0px;
+  }
+}
