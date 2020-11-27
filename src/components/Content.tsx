@@ -3,17 +3,7 @@ import cn from "classnames";
 
 import Icon from "./Icon";
 import SubContent from "./SubContent";
-
-type ContentType = {
-  className?: string,
-  label: string,
-  link: string,
-  sublinks?: {
-    label: string,
-    key: string,
-    link: string,
-  }[],
-}
+import type { ContentType } from "./types";
 
 const Content = ({ className, sublinks, link, label }: ContentType) => (
   <div className={cn("content-component", className)}>

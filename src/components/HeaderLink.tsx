@@ -1,6 +1,6 @@
 import React from "react";
-import "./HeaderLink.scss";
 
+import "./HeaderLink.scss";
 type HeaderLinkType = {
   children?: any,
   key?: string,

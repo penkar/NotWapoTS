@@ -1,10 +1,10 @@
 import React from "react";
 import cn from "classnames";
-import "./TableOfContents.scss";
 
 import Content from "./Content";
 import MultiContent from "./MultiContent";
 import Button from "./Button";
+import "./TableOfContents.scss";
 
 const MultiLink = {
   primary: {

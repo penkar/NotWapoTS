@@ -1,18 +1,10 @@
 import React from "react";
 import cn from "classnames";
+
 import "./Button.scss";
+import type { ButtonType } from "./types";
 
-type ButtonType = {
-  action?: (event) => any,
-  className: string,
-  full?: boolean,
-  label: string,
-  link: string,
-  title?: string,
-  type: string,
-}
-
-const Button = ({ action, className, full, label, link, title, type }:ButtonType) => (
+const Button = ({ action, className, full, label, link, title, type }: ButtonType) => (
   <div
     className={cn("generic-button-component", className, type, full)}
     onClick={action}

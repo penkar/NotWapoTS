@@ -1,6 +1,6 @@
 import React from "react";
-import "./RecentStories.scss";
 
+import "./RecentStories.scss";
 type RecentStoriesType = {
   recentStories: {
     title: string,

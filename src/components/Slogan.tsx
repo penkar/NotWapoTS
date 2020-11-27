@@ -1,9 +1,10 @@
 import React from "react";
-import "./Slogan.scss";
 
+import "./Slogan.scss";
 type SloganType = {
   title?: string
 }
+
 const Months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const date = new Date();
 
